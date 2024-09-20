@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+    background: #171717;
+    font-family: 'Nunito', sans-serif;
+    background-image: url(imgs/1900x1900-000000-80-0-0.jpg);
+    caret-color: transparent;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-player{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background: #fff;
+    background-image: url(imgs/1900x1900-000000-80-0-0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+    border-radius: 20px;
+    height: 90vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    backdrop-filter: opacity(50%);
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4CCD99 ;
+}
+
+.top-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.top-container .plus-icon{
+    font-size: 2em;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.controls div button{
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.controls div button:hover{
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+
+.controls div:nth-child(3){
+    transform: scale(1.8);
+}
+
+.bottom-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-container div i{
+    font-size: 1.5em;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.player-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(80px);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.title h1{
+    color: #fff;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.player-container p{
+    color: #bbbbbb;
+    margin: 0;
+    font-size: 0.8em;
+}
+.player-progress{
+    margin: 20px 0;
+}
+
+#song-progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #959595;
+    margin: 8px 0;
+}
+
+#progress{
+    height: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #4CCD99;
+    margin: 8px 0;
+}
+
+#song-progress:hover{
+    transform: scaleY(1.8);
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+#song-progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+    background: #4CCD99;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.time-display{
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-display p {
+    font-size: 0.8em;
+}
+
+.fadeIn{
+    animation: backdropFadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from{
+        transform: translateY(100px);
+    }to{
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes backdropFadeIn {
+    from{
+        backdrop-filter: opacity(0%);
+    }to{
+        backdrop-filter: opacity(100%);
+    }
+    
+}
