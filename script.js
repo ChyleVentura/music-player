@@ -35,6 +35,7 @@ const prevBtn = document.getElementById('prev')
 const nextBtn = document.getElementById('next')
 const title = document.querySelector('.music-title')
 const artist = document.querySelector('.music-artist')
+const body = document.querySelector('body')
 
 let songIndex = 0
 let isPlaying = false
@@ -64,7 +65,7 @@ getSong = (music) =>{
     title.textContent = music.title
     artist.textContent = music.artist
     image.style.backgroundImage = music.img
-
+    body.style.backgroundImage = music.img
 }
 
 song.onloadedmetadata =()=>{
