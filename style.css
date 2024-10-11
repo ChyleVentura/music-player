@@ -6,6 +6,8 @@ body{
     background-image: url(imgs/1900x1900-000000-80-0-0.jpg);
     caret-color: transparent;
     backdrop-filter: blur(100px);
+    margin: 0;
+    padding: 0;
 }
 
 .container{
@@ -15,6 +17,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background-color: rgba(1,1,1,0.5);
 }
 
 .music-player{
